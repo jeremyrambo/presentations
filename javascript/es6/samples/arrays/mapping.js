@@ -4,5 +4,5 @@ const primesPlus1 = primes.map((prime) => {
   return prime + 1;
 });
 
-console.log( 'original primes', primes);
-console.log( 'primes plus one', primesPlus1);
+console.log('original primes', primes);
+console.log('primes plus one', primesPlus1);
