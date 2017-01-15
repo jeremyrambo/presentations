@@ -1,20 +1,20 @@
 
-const customers = [];
+let customers = [];
 
-const add => ( ...customer ) {
-
+const add = function (...customer) {
   let _customers = [];
-  customers.forEach((c) => {
+  customer.forEach((c) => {
     if (c instanceof Array) {
-      _customers = [.. _customers, ...c];
+      _customers = [..._customers, ...c];
     } else {
-      _customers = [.. _customers, c];
+      _customers = [..._customers, c];
     }
   });
 
   customers = [...customers, ..._customers];
-
-}
+};
 
 export { add };
-export default customers;
+export default function () {
+  return customers;
+}
